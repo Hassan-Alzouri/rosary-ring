@@ -37,7 +37,7 @@ Rosary-ring/
 
 ```bash
 git clone https://github.com/Hassan-Alzouri/rosary-ring.git
-cd Rosary-ring
+cd rosary-ring
 flutter pub get
 flutter run
 ```
