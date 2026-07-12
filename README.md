@@ -1,16 +1,47 @@
-# second_app_project2
+# Rosary Ring
 
-A new Flutter project.
+A simple Flutter app that acts as a digital Tasbih (Islamic prayer bead counter), built to practice Flutter state management and custom UI design.
+
+## Overview
+
+The app displays a large circular counter with a Quranic verse in the app bar. Tapping the "+" button increments the count, and a reset button clears it back to zero — a digital stand-in for counting dhikr (remembrance) recitations traditionally tracked with physical prayer beads.
+
+## Features
+
+- ➕ **Tap-to-count** — large, easy-to-tap increment button
+- 🔄 **Reset** — clears the counter back to zero
+- 🎨 **Custom circular UI** — hand-built layered container design with shadows, built entirely with Flutter widgets (no external UI libraries)
+
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Framework | Flutter (Dart) |
+| State management | Local widget state (`setState`) |
+
+## Project Structure
+
+```
+Rosary-ring/
+└── lib/
+    └── main.dart   # App entry point and counter UI/logic
+```
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
 
-A few resources to get you started if this is your first Flutter project:
+- [Flutter SDK](https://docs.flutter.dev/get-started/install) (3.4+)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Setup
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+git clone https://github.com/Hassan-Alzouri/Rosary-ring.git
+cd Rosary-ring
+flutter pub get
+flutter run
+```
+
+## Status & Next Steps
+
+This is a single-screen UI/state-management exercise — the count currently resets on app restart. A natural next step would be persisting the count locally (e.g. with `shared_preferences`) so it survives between sessions, plus support for multiple counters (e.g. different dhikr with different target counts).
